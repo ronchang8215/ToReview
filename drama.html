@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>ToReview-戲劇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1", minimum-scale=0.8, maximum-scale=1.2,user-scalable=yes;>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="ninetydegrees8">
+    <meta name="keywords" content="toreview,TOREVIEW,ToReview" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="icon/logo/littleicon.ico">
+  <!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<!--自己的css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body>
+<!--待使用-->
+<!--
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="notitle1.html">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="topnav-right"><a href="#signup">Sign In</a></li>
+      <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+      <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+-->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<input class=allsearch type="text" placeholder="搜尋" >
+<button class=sidesearchicon type="submit"><i class="fa fa-search"></i></button><br><br><br>
+<div class=userphoto><div class=user><i class="fa fa-user"></i></div></div>
+    <div class=userid><a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a><a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a></div><br>
+<a class=sidenava href="about.html"><font>關於ToReview</font></a>
+<a class=sidenava href="member.html"><font>會員專區</font></a>
+<a class=sidenava href="mailto:toreview@gmail.com"><font>聯絡我們</font></a><br><br>
+<div class=logos>
+<a class=logoicon href="#"><img src="icon/facebook-logo.png" width="20px"></a>
+<a class=logoicon href="#"><img src="icon/instagram-logo.png" width="20px"></a>
+<a class=logoicon href="#"><img src="icon/twitter.png" width="20px"></a></div>
+</div>    
+
+<!-- Use any element to open the sidenav -->
+  <nav class="title" >
+      <span><a id=open href="javascript:void(0);">&#9776;</a></span>
+      <div style="padding-top:3px;margin-left:1%;margin-right:1%; float:left;width:10%;min-width:100px;height:36px;">
+      <a href="index.html">
+      <img class=clearfix src="logo4.png" width=100px; height=36px; >
+      </a></div>
+<!--      main nav-->
+      <div class="col-sp" onclick="opencontent('mobile')">&#8227;</div>
+      <div class="col-x" style="float: left;"><a class=category href="movie.html">電影 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png" width=20px;></a>
+      <div class=dropdown-content>
+          <a href="#">亞洲電影</a>
+          <a href="#">西洋電影</a>
+          <a href="#">其他電影</a></div></div>
+      <div class="col-x" style="float: left;"><a class=category href="drama.html">戲劇 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png" width=20px;></a>
+          <div class=dropdown-content>
+          <a href="#">亞洲戲劇</a>
+          <a href="#">西洋戲劇</a>
+          <a href="#">其他戲劇</a></div></div>
+      <div class="col-x" style="float: left;"><a class=category href="anime.html">動漫 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png" width=20px;></a>
+          <div class=dropdown-content>
+          <a href="#">日本動漫</a>
+          <a href="#">美式動漫</a>
+          <a href="#">其他動漫</a></div></div>
+      <div class="col-y" style="float:right;"><a class=category href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a><a class=category href="#" onclick="document.getElementById('id01').style.display='block'">登入</a></div>
+<!--    mobile nav-->
+      <div id=mobile class=mobilenav style="left:-100%">
+      <div class="responsive movie"><a class=category href="movie.html">電影</a><span id=click1><a class=plus><a class=minus></a></a></span>
+      </div>
+      <div id="moviec"><div class="dropdown-content1" >
+          <a href="#">亞洲電影</a>
+          <a href="#">西洋電影</a>
+          <a href="#">其他電影</a></div></div>
+      <div class="responsive drama"><a class=category href="drama.html">戲劇</a><span id="click2"><a class=plus></a><a class=minus></a></span>
+          </div>
+      <div id="dramac"><div class=dropdown-content1>
+          <a href="#">亞洲戲劇</a>
+          <a href="#">西洋戲劇</a>
+          <a href="#">其他戲劇</a></div></div>
+      <div class="responsive anime"><a class=category href="anime.html">動漫</a><span id="click3"><a class=plus></a><a class=minus></a></span>
+          </div>
+      <div id="animec"><div class=dropdown-content1>
+          <a href="#">日本動漫</a>
+          <a href="#">美式動漫</a>
+          <a href="#">其他動漫</a></div></div>
+        </div>
+    </nav>
+<div id="id01" class="form">
+    <form class="modal-content" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+      <img src="logo5.png" class="avatar">
+    </div>
+
+    <div class="container">
+<!--      <label for="uname"><b>帳號/電子信箱</b></label>-->
+      <input type="email" placeholder="電子信箱" name="email" required>
+<!--      <label for="psw"><b>密碼</b></label>-->
+      <input type="password" placeholder="密碼" name="psw" required>
+      <button type="submit">登入</button><br>
+    </div>
+
+    <div class="container">
+    <label for="remember">
+        記住帳號？<input type="checkbox" checked="checked" name="remember"> 
+      </label>
+      <span class="extra"><a href=#>沒有帳號？</a>或是 <a href="#">忘記密碼？</a></span>
+    </div>
+  </form>
+    </div>
+    <div id="id02" class="form">
+    <form class="modal-content" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+      <img src="logo5.png" class="avatar">
+    </div>
+
+    <div class="container">
+<!--      <label for="uname"><b>帳號/電子信箱</b></label>-->
+        <input type="text" placeholder="名稱" name="uname" autocomplete="off" required>
+      <input type="email" placeholder="電子信箱" name="email" autocomplete="off" required>
+<!--      <label for="psw"><b>密碼</b></label>-->
+      <input type="password" placeholder="密碼" name="psw" required>
+        <input type="password" placeholder="再次確認密碼" name="psw" required>
+      <button type="submit">註冊</button><br>
+    </div>
+
+    <div class="container">
+    <span>
+        <input type="checkbox">我同意遵守 ToReview 使用協議
+      </span>
+    </div>
+  </form>
+    </div>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+    <br><br><br>
+<!--    <font>&nbsp;Movie<br>&nbsp;&nbsp;&nbsp;&nbsp;電影作品</font>-->
+<!--    <div class=cttitle>Movie<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;電影</div>-->
+    <div><div class=cttitle2>Drama</div>
+    <div class=cttitle3>戲劇</div></div>
+    <br><br>
+    <div class=search><input type="text" id="myInput" placeholder="想找什麼作品" onkeyup="myFunction()"><button type="submit" class="searchicon" onclick="myFunction()"><i class="fa fa-search"></i></button></div>
+    <br><br>
+    <div id=divide>
+        按 
+        <a href=# class="a" onclick="sortListhot()">熱門</a>
+        / 
+        <a href=# class="a active" onclick="sortListtime()">時間</a> 排序
+    </div>
+    <div id="languagedivide">
+    <a href=# class="b active" onclick="filterSelection('all')">全部&nbsp;</a>
+    <a href=# class="b" onclick="filterSelection('english')">英語&nbsp;</a> 
+    <a href=# class="b" onclick="filterSelection('chinese')">國語&nbsp;</a> 
+    <a href=# class="b" onclick="filterSelection('japanese')">日本&nbsp;</a> 
+    <a href=# class="b" onclick="filterSelection('korean')">韓國&nbsp;</a> 
+    <a href=# class="b" onclick="filterSelection('other')">其他&nbsp;</a></div>
+    <br><hr>
+    <ul class=row2 id="myUL">
+    <li class="work chinese" data-date="20180803" data-hot="14"><a href=notitle1.html >
+    <img alt="血觀音" class="slideimg" onmouseover="appear('thebold');" src="picture/TheBoldtheCorruptandtheBeautiful.jpg">
+    <div class="content1">
+    <div>
+    <i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;14</i></div>
+    </div></a></li>
+    <li class="work english" data-date="20180503" data-hot="10"><a href=notitle1.html>
+    <img alt="一級玩家" class="slideimg" onmouseover="appear('playone')"  src="picture/palyone.jpg"><div class="content1">
+    <div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;10</i></div>
+    </div></a></li>
+    <li class="work english" data-date="20180603" data-hot="12"><a href=notitle1.html>
+    <img alt="環太平洋2" class="slideimg" onmouseover="appear('pacificrim2')" src="picture/pacificrim2.jpg">
+    <div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;12</i></div>
+    </div></a></li>
+    <li class="work english" data-date="20180703" data-hot="11"><a href=notitle1.html>
+    <img alt="樂來越愛你" class="slideimg" onmouseover="appear('lalaland')" src="picture/lalaland.jpg"><div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;11</i></div>
+    </div></a></li>
+    <li class="work chinese" data-date="20180803" data-hot="19">
+    <a href=notitle1.html>
+    <img alt="大佛普拉斯" class="slideimg" onmouseover="appear('buddha')"  src="picture/TheGreatBuddha.jpg">
+    <div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;19</i></div>
+    </div></a></li>
+    <li class="work chinese" data-date="20180801" data-hot="15">
+    <a href=notitle1.html >
+    <img alt="血觀音" class="slideimg" onmouseover="appear('thebold');" src="picture/TheBoldtheCorruptandtheBeautiful.jpg">
+    <div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;15</i></div>
+    </div></a></li>
+    <li class="work english" data-date="20180801" data-hot="13">
+    <a href=notitle1.html>
+    <img alt="一級玩家" class="slideimg" onmouseover="appear('playone')"  src="picture/palyone.jpg"><div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;13</i></div>
+    </div></a></li>
+    <li class="work english" data-date="20180729" data-hot="10">
+    <a href=notitle1.html>
+    <img alt="環太平洋2" class="slideimg" onmouseover="appear('pacificrim2')" src="picture/pacificrim2.jpg">
+    <div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;10</i></div>
+    </div></a></li>
+    <li class="work english" data-date="20180802" data-hot="16">
+    <a href=notitle1.html>
+    <img alt="樂來越愛你" class="slideimg" onmouseover="appear('lalaland')" src="picture/lalaland.jpg"><div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;16</i></div>
+    </div></a></li>
+    <li class="work chinese" data-date="20180802" data-hot="18">
+    <a href=notitle1.html>
+    <img alt="大佛普拉斯 chinese" class="slideimg" onmouseover="appear('buddha')"  src="picture/TheGreatBuddha.jpg">
+    <div class="content1"><div><i class="fa fa-heart">&nbsp;3</i><i class="fa fa-hand-o-up">&nbsp;18</i></div>
+    </div></a></li>
+            </ul>
+    
+    </div>
+    
+    <div id=rightbottom onmousedown="rightblockclose()">
+    <div class="pull" onclick="rightblock()">&#171;</div>
+<!--    <a href="javascript:void(0)" onclick="rightblockclose()">x</a>-->
+    <div id="none" class="movietitle">將滑鼠移至各作品</div>
+    <div id="thebold" class="movietitle">
+        <h3>血觀音<br><br>The Bold, the Corrupt, and the Beautiful</h3><article><p>地區：台灣</p><p>上映日期：2017-11-24</p><p>導演：楊雅喆</p><p>演員：惠英紅 、 吳可熙 、 文淇 、 王月 、 陳珮騏 、 溫貞菱 、 應蔚民 、 尹昭德 、 大久保麻梨子 、 施名帥 、 林志儒</p>
+        <p><i>劇情大綱：《血觀音》描述在女人組成的棠府裡，住著3位不同世代但一樣懂人心的女性，由棠夫人（惠英紅飾）主持大局，穿梭權貴間，靠著高超手腕與柔軟身段，在復雜的政商關係中生存取利；個性如刺猬般的大女兒棠寧（吳可熙飾）為求母親肯定，勉力配合；乖巧的小女兒棠真（文淇飾）多半靜靜觀察，唯母命是從。直到某天，棠家親密友人慘遭滅門事件爆發，三人各自被牽扯其中，一向以大局為重的棠夫人，為了守護一切，費盡心機，卻讓三人走向不同的命運。</i></p></article> </div>
+    <div id="playone" class="movietitle"><h3>一級玩家<br><br>Ready Player One</h3><article><p>地區：美國</p><p>上映日期：2018-03-11</p><p>導演：史蒂芬·史匹柏</p><p>演員：泰·謝里丹 、 奧利維亞·庫克 、 班·曼德森 、 馬克·勞倫斯 、 賽門·佩吉 、 T·J·米勒</p>
+        <p><i>劇情大綱：待補</i></p></article> </div>
+    <div id="pacificrim2" class="movietitle"><h3>環太平洋2<br><br>Pacific Rim: Uprising</h3><article><p>地區：美國</p><p>上映日期：2018-03-15</p><p>導演：史蒂芬·S·迪奈特</p><p>演員：約翰·波耶加 、 史考特·伊斯威特 、 卡莉·史派妮 、 景甜 、 菊地凜子 、 查理·戴 、 柏恩·高曼 、 亞德莉婭·阿霍納</p>
+        <p><i>劇情大綱：待補</i></p></article> </div>
+    <div id="lalaland" class="movietitle"><h3>樂來越愛你<br><br>La La Land</h3><article><p>地區：美國</p><p>上映日期：2016-11-09</p><p>導演：達米恩·查澤雷</p><p>演員：萊恩·葛斯林 、 艾瑪·史東 、 約翰·傳奇 、 羅絲瑪麗·德威特</p>
+        <p><i>劇情大綱：待補</i></p></article> </div>
+    <div id="buddha" class="movietitle"><h3>大佛普拉斯<br><br>The Great Buddha+</h3><article><p>地區：台灣</p><p>上映日期：2017-10-13</p><p>導演：黃信堯</p><p>演員：陳竹昇 、 莊益增 、 戴立忍 、 林美秀 、 張少懷</p>
+        <p><i>劇情大綱：待補</i></p></article> </div>
+    </div>
+<footer>
+Copyright © 2019 ToReview     
+</footer>
+  
+<script type="text/javascript" src="js/myjquery.js"></script>
+<script type="text/javascript" src="js/category.js"></script>
+</body>
+
+</html>
