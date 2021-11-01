@@ -1,6 +1,5 @@
 /*########### Defaults ###########*/
 
-
 nav,
 header,
 footer {
@@ -10,8 +9,7 @@ footer {
 body {
     line-height: 1;
     margin: 0;
-/*    background-color:#F6F5F4;*/
-    font-family: "cwTeXYen",'Open Sans Condensed','Microsoft JhengHei',sans-serif ;
+    font-family: 'Open Sans Condensed','Microsoft JhengHei',sans-serif ;
 }
 
 .clearfix {
@@ -44,7 +42,6 @@ article p {
   width: 100%;
   padding:0;
   flex-wrap: wrap;
-/*  align-items: center;*/
 }
 
 .row3 {
@@ -52,7 +49,6 @@ article p {
   width: 100%;
   padding:0;
   flex-wrap: nowrap;
-/*  align-items: center;*/
 }
 
 .row::after {
@@ -90,7 +86,7 @@ article p {
 h1 {
     color:#7E817F;
     font-size:20px;
-    font-family: 'Noto Sans TC',"cwTeXYen",'Open Sans Condensed',sans-serif ;
+    font-family:'Open Sans Condensed',sans-serif ;
     text-decoration: none;
     font-weight:100;
     text-align: center;
@@ -100,7 +96,7 @@ h2 {
     color:#000000;
     font-size:18px;
     line-height: 1;
-    font-family: "cwTeXYen",'Open Sans Condensed',sans-serif ;
+    font-family: 'Open Sans Condensed',sans-serif ;
     text-decoration: none;
     font-weight:500;
 }
@@ -117,14 +113,8 @@ h3 {
 h4 {
     color:#9FA4BC;
     font-size:20px;
-    font-family: "cwTeXYen",'Open Sans Condensed',sans-serif ;
+    font-family: 'Open Sans Condensed',sans-serif ;
     font-weight:500;
-}
-
-
-font {
-    color:#000000;
-    font-size:30px;
 }
 
 a {
@@ -488,43 +478,38 @@ a {
   animation-name: bounceInRight;
 }
 
-/*############### Nav bar ############*/
-
 /* The side navigation menu */
 .sidenav {
-    opacity: 0.8;
-    height: 100%; /* 100% Full-height */
-    width: 0px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left:-250px;
-    width:250px;
-    background:#3B6A67;
-/*    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+  opacity: 0.8;
+  height: 100%; 
+  width: 0px; 
+  position: fixed; 
+  z-index: 3; 
+  top: 0; 
+  left:-250px;
+  width:250px;
+  background:#3B6A67;
+  overflow-x: hidden; 
+  transition: 0.2s; 
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: #F5F5F5;
-    display: block;
-    transition: 0.3s;
-    font-size:30px;
-    font-family: "cwTeXYen",'Open Sans Condensed',sans-serif ;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #F5F5F5;
+  display: block;
+  transition: 0.3s;
+  font-size:30px;
+  font-family:'Open Sans Condensed',sans-serif ;
 }
 
-.sidenav a font {
-    text-decoration:underline;
-/*    font-weight:bold;*/
-    font-size:25px;
-/*    padding-left:25px;*/
+.sidenav a span {
+  color:#000000;
+  text-decoration:underline;
+  font-size:1.5rem;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenava:hover {
     background: #ffffff;
     color: #000000;
@@ -650,9 +635,9 @@ input{
     z-index:2;
     display: block;
     position:fixed;
-    height: 40px; /* 100% Full-height */
-    width: 100%;/* 0 width - change this with JavaScript */
-    top: 0; /* Stay at the top */
+    height: 40px; 
+    width: 100%;
+    top: 0;
     left: 0;
     background: #84fab0;
     background-image: linear-gradient(120deg, #8ef0b3 0%, #8fcbf4 100%);
@@ -681,7 +666,6 @@ input{
 
 .feather {
     display:none;
-/*    vertical-align:-8%;*/
     position:absolute;
     right:8%;
     top:16px;
@@ -698,7 +682,6 @@ input{
 .col-x {
     width:11%;
     text-align: center;
-/*    flex-direction: column;*/
 }
 
 .col-y {
@@ -741,7 +724,6 @@ input{
 
 .col-x::before {
      pointer-events: none;
-/*    display:none;*/
     position: absolute;
     z-index:0;
     content: '';
@@ -783,10 +765,8 @@ input{
     background-color:#046E7C;
     z-index:-3;
     animation: 0.5s slideInDown;
-/*    transform: translateY(1px);*/
     border-bottom:2px #ddd solid;
     box-sizing: border-box;
-/*    box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2)*/
 }
 
 /* Links inside the dropdown */
@@ -803,7 +783,6 @@ input{
 }
 
 .dropdown-content a:hover{
-/*    border:1px #ffffff inset;*/
     opacity: 1;
     
 }
@@ -890,16 +869,16 @@ span.extra {
 }
 
 .form {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 5; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 5;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
 
@@ -932,14 +911,290 @@ span.extra {
     transform: scale(1.4);
 }
 
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition:0.5s;
-    display:block;
-　  font-size:15px;
-　  float:left;  
-    margin: 0;
-    padding:0px 20px;
-    min-height: 600px;
+  transition:0.5s;
+  display:block;
+  font-size:15px;
+  margin: 0;
+  padding:0px 20px;
+}
+
+/*######### Mobile ###########*/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width:900px) {
+  
+/* notitle1替補 */
+  .col-3 {
+      width:100%;
+      margin:0;
+  }
+  
+  .col-x {
+      width:15%;
+  }
+      
+  .dropdown-content a {
+  font-size:14px;
+  }
+    
+}
+
+@media screen and (max-width: 640px) {
+  
+  .sidenav {font-size:16px;}
+  
+  .col-y {
+      display:none;
+  }
+  
+  article p {
+      font-size: 25px;
+}
+  .row3 {
+      flex-direction: column;
+  }
+
+  .rightside {
+      margin:0;
+  }
+  
+  
+  .col-8,.col-7,.col-6,.col-5,.col-4 {
+      width: 100%;
+      margin: 0;
+}
+  
+  .mobilehot {
+      display:block;
+  }
+  
+  
+  .rightside {
+      margin:16px 0px;
+  }
+  
+  
+  .slideshow-container {
+      display:none;
+  }
+  
+  .col-x {
+      display:none;
+  }
+  
+  .mobilenav {
+      flex-direction: column;
+      width:100%;
+      display:block;
+      left:-100%;
+      position:absolute;
+      top:40px;
+      transition:0.3s;
+  }
+  
+  .responsive {
+      display:flex;
+      flex-direction: row;
+      background:#000;
+      position:relative;
+      float:none;
+      background:#046E7C;
+      border:2px solid #fff;
+      border-style:none solid solid none;
+      box-sizing: border-box;
+      height:45px;
+      z-index:1;
+      transition:0.3s;
+  }
+  
+  .responsive:hover {
+      background:#ddd;
+  }
+  
+  .movie {
+      border-style:solid solid solid none;
+      background:#c9f2f1;
+
+      width:100%;
+  }
+  
+  .drama {
+      background:#c9f2f1;
+
+      width:80%;
+  }
+  
+  .anime {
+      background:#c9f2f1;
+      width:60%;
+  }
+  
+  
+  .dropdown-content1 {
+      display:flex;
+      flex-flow: column;
+      background:#F6F5F4;
+      z-index: 0;
+      opacity: 0.9;
+  }
+  
+  #moviec, #dramac, #animec {
+      display:none;
+  }
+  
+  #moviec {
+      width:90%;
+  }
+  #dramac {
+      width:70%;
+  }
+  #animec {
+      width:50%;
+  }
+  
+  
+  .col-sp {
+      display:block;
+      -ms-transform: rotate(90deg); /* IE */
+      -webkit-transform: rotate(90deg); /* Safari */
+      transform: rotate(90deg);
+      width:40px;
+      font-size:40px;
+      height:40px;
+      text-align: center;
+      line-height:40px;
+      padding-left:10px;
+      cursor: pointer;
+      box-sizing: border-box;
+      float:left;
+      transition:0.3s;
+  }
+  
+  .col-sp:hover {
+      background:rgba(255,255,255,0.6);
+      color:#000;
+  }
+  
+  .title a {
+      font-size:22px;
+      color:#f5f5f5;
+      width:100%;
+}
+  
+  .category {
+      padding:3% 30px 3% 0;
+      display:flex;
+      line-height: 100%;
+      align-items: center;
+      justify-content:flex-end;
+      text-shadow: 1px 1px rgba(0,0,0,0.6);
+  }
+  
+  .responsive span {
+      display:block;
+      height:45px;
+      width:30px;
+      cursor: pointer;
+      position:absolute;
+      padding:8px 0px 0px 0px;
+      right:0;
+      z-index: 1;
+      transition:0.3s;
+      text-align: center;
+      box-sizing: border-box;
+  }
+  
+  .plus,.minus {
+      font-family:'Montserrat','Microsoft JhengHei';
+      animation:fade 2as;
+      animation:rotateIn 1s;
+  }
+  
+  .minus {
+      display:none;
+  }
+  
+  .plus::before {
+      content:"\002B";
+      color:#57c0b9;
+      margin:0;
+      text-align: center;
+      font-size:25px;
+      font-weight:900;
+  }
+  
+  .responsive span:hover {
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15);
+  }
+  
+  .minus::before {
+      content:"\2212";
+      color:#57c0b9;
+      margin:0;
+      text-align: center;
+      font-size:25px;
+      font-weight:900;
+  }
+
+  .col-x:hover:before {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+    display:none;
+  }
+
+
+  .col-x::before {
+    display:none;
+  }
+
+  .col-x:hover img{
+    display:none;
+  }
+
+/* Links inside the dropdown */
+  .dropdown-content1 a {
+      font-size:16px;
+      color:#000;
+      padding:5px 0px 5px 0px;
+      margin:0;
+      text-align: center;
+      width:100%;
+      opacity: 1;
+      border:1px solid #fff;
+      border-style:none solid solid none;
+      transition:0.3s;
+}
+  .dropdown-content1 a:hover {
+      background:rgba(0,0,0,0.6);
+      color:#fff;
+  }
+  
+  .modal-content {
+      width:100%;
+  }
+  
+  .modal-content img {
+      width:50%;
+  }
+  
+  .container span {
+      position:static;
+  }
+  
+  .container label {
+      margin:0 0 10px 0;
+      float:none;
+      width:100%;
+      display:block;
+  }
+  
+  span.extra {
+      float:none;
+      width:100%;
+      display:block;
+  }
+
 }

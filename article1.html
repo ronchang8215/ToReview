@@ -2,182 +2,246 @@
 <html lang="zh">
 <head>
   <title>ToReview-血觀音——觀後感</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1", minimum-scale=0.8, maximum-scale=1.2,user-scalable=yes;>
-    <meta charset="UTF-8"/>
-    <meta name="author" content="ninetydegrees8">
-    <meta name="keywords" content="toreview,TOREVIEW,ToReview" />
-    <meta name="robots" content="noindex,nofollow" />
-    <link rel="Shortcut Icon" type="image/x-icon" href="icon/logo/littleicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8"/>
+  <meta name="keywords" content="toreview,TOREVIEW,ToReview" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="icon/logo/littleicon.ico">
   <!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexming.css">
-  <link href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-<!--自己的css-->
+  <!--自己的css-->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/article.css">
 </head>
     
-    <body>
+<body>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<input class=allsearch type="text" placeholder="搜尋" >
-<button class=sidesearchicon type="submit"><i class="fa fa-search"></i></button><br><br><br>
-<div class=userphoto><div class=user><i class="fa fa-user"></i></div></div>
-    <div class=userid><a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a><a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a></div><br>
-<a class=sidenava href="about.html"><font>關於ToReview</font></a>
-<a class=sidenava href="member.html"><font>會員專區</font></a>
-<a class=sidenava href="mailto:toreview@gmail.com"><font>聯絡我們</font></a><br><br>
-<div class=logos>
-<a class=logoicon href="#"><img src="icon/facebook-logo.png" width="20px"></a>
-<a class=logoicon href="#"><img src="icon/instagram-logo.png" width="20px"></a>
-<a class=logoicon href="#"><img src="icon/twitter.png" width="20px"></a></div>
+  <input class=allsearch type="text" placeholder="搜尋" >
+  <button class=sidesearchicon type="submit">
+    <i class="fa fa-search"></i>
+  </button>
+  <br><br><br>
+  <div class=userphoto>
+    <div class=user>
+      <i class="fa fa-user"></i>
+    </div>
+  </div>
+  <div class=userid>
+    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+    <a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+  </div>
+  <br>
+  <a class=sidenava href="about.html"><span>關於ToReview</span></a>
+  <a class=sidenava href="member.html"><span>會員專區</span></a>
+  <a class=sidenava href="mailto:toreview@gmail.com"><span>聯絡我們</span></a><br><br>
+  <div class=logos>
+    <a class=logoicon href="#"><img src="icon/facebook-logo.png" width="20px"></a>
+    <a class=logoicon href="#"><img src="icon/instagram-logo.png" width="20px"></a>
+    <a class=logoicon href="#"><img src="icon/twitter.png" width="20px"></a>
+  </div>
 </div>    
 
-<!-- Use any element to open the sidenav -->
-  <nav class="title" >
-      <span><a id=open href="javascript:void(0);">&#9776;</a></span>
-      <div style="padding-top:3px;margin-left:1%;margin-right:1%; float:left;width:10%;min-width:100px;height:36px;">
-      <a href="index.html">
-      <img class=clearfix src="logo4.png" width=100px; height=36px; >
-      </a></div>
-<!--      main nav-->
-      <div class="col-sp" style="float: left;" onclick="opencontent('mobile')">&#8227;</div>
-      <div class="col-x" style="float: left;"><a class=category href="movie.html">電影 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png" width=20px;></a>
-      <div class=dropdown-content>
-          <a href="#">亞洲電影</a>
-          <a href="#">西洋電影</a>
-          <a href="#">其他電影</a></div></div>
-      <div class="col-x" style="float: left;"><a class=category href="drama.html">戲劇 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png" width=20px;></a>
-          <div class=dropdown-content>
-          <a href="#">亞洲戲劇</a>
-          <a href="#">西洋戲劇</a>
-          <a href="#">其他戲劇</a></div></div>
-      <div class="col-x" style="float: left;"><a class=category href="anime.html">動漫 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png" width=20px;></a>
-          <div class=dropdown-content>
-          <a href="#">日本動漫</a>
-          <a href="#">美式動漫</a>
-          <a href="#">其他動漫</a></div></div>
-      <div class="col-y" style="float:right;"><a class=category href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a><a class=category href="#" onclick="document.getElementById('id01').style.display='block'">登入</a></div>
+<nav class="title" >
+  <!-- element to open the sidenav -->
+  <span><a id=open href="javascript:void(0);">&#9776;</a></span>
+  <div style="padding-top:3px;margin-left:1%;margin-right:1%; float:left;width:10%;min-width:100px;height:36px;">
+    <a href="index.html">
+      <img class=clearfix src="icon/logo4.png" width="100px" height="36px" >
+    </a>
+  </div>
+<!-- main nav-->
+  <div class="col-sp" style="float: left;" onclick="opencontent('mobile')">&#8227;</div>
+  <div class="col-x" style="float: left;">
+    <a class=category href="movie.html">電影 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
+    <div class=dropdown-content>
+      <a href="#">亞洲電影</a>
+      <a href="#">西洋電影</a>
+      <a href="#">其他電影</a>
+    </div>
+  </div>
+  <div class="col-x" style="float: left;">
+    <a class=category href="drama.html">戲劇 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
+    <div class=dropdown-content>
+      <a href="#">亞洲戲劇</a>
+      <a href="#">西洋戲劇</a>
+      <a href="#">其他戲劇</a>
+    </div>
+  </div>
+  <div class="col-x" style="float: left;">
+    <a class=category href="anime.html">動漫 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
+    <div class=dropdown-content>
+      <a href="#">日本動漫</a>
+      <a href="#">美式動漫</a>
+      <a href="#">其他動漫</a>
+    </div>
+  </div>
+  <div class="col-y" style="float:right;">
+    <a class=category href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+    <a class=category href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+  </div>
 <!--    mobile nav-->
-      <div id=mobile class=mobilenav style="left:-100%">
-      <div class="responsive movie"><a class=category href="movie.html">電影</a><span id=click1><a class=plus><a class=minus></a></a></span>
+  <div id="mobile" class="mobilenav" style="left:-100%">
+    <div class="responsive movie">
+      <a class=category href="movie.html">電影</a>
+      <span id=click1>
+        <a class=plus><a class=minus></a></a>
+      </span>
+    </div>
+    <div id="moviec">
+      <div class="dropdown-content1" >
+        <a href="#">亞洲電影</a>
+        <a href="#">西洋電影</a>
+        <a href="#">其他電影</a>
       </div>
-      <div id="moviec"><div class="dropdown-content1" >
-          <a href="#">亞洲電影</a>
-          <a href="#">西洋電影</a>
-          <a href="#">其他電影</a></div></div>
-      <div class="responsive drama"><a class=category href="drama.html">戲劇</a><span id="click2"><a class=plus></a><a class=minus></a></span>
-          </div>
-      <div id="dramac"><div class=dropdown-content1>
-          <a href="#">亞洲戲劇</a>
-          <a href="#">西洋戲劇</a>
-          <a href="#">其他戲劇</a></div></div>
-      <div class="responsive anime"><a class=category href="anime.html">動漫</a><span id="click3"><a class=plus></a><a class=minus></a></span>
-          </div>
-      <div id="animec"><div class=dropdown-content1>
-          <a href="#">日本動漫</a>
-          <a href="#">美式動漫</a>
-          <a href="#">其他動漫</a></div></div>
-        </div>
-    </nav>
+    </div>
+    <div class="responsive drama">
+      <a class=category href="drama.html">戲劇</a>
+      <span id="click2">
+        <a class=plus></a><a class=minus></a>
+      </span>
+    </div>
+    <div id="dramac">
+      <div class=dropdown-content1>
+        <a href="#">亞洲戲劇</a>
+        <a href="#">西洋戲劇</a>
+        <a href="#">其他戲劇</a>
+      </div>
+    </div>
+    <div class="responsive anime">
+      <a class=category href="anime.html">動漫</a>
+      <span id="click3">
+        <a class=plus></a><a class=minus></a>
+      </span>
+    </div>
+    <div id="animec">
+      <div class=dropdown-content1>
+        <a href="#">日本動漫</a>
+        <a href="#">美式動漫</a>
+        <a href="#">其他動漫</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- 登入modal -->
 <div id="id01" class="form">
-    <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
-      <img src="logo5.png" class="avatar">
+      <img src="icon/logo5.png" class="avatar">
     </div>
-
     <div class="container">
-<!--      <label for="uname"><b>帳號/電子信箱</b></label>-->
       <input type="email" placeholder="電子信箱" name="email" required>
-<!--      <label for="psw"><b>密碼</b></label>-->
       <input type="password" placeholder="密碼" name="psw" required>
       <button type="submit">登入</button><br>
     </div>
-
     <div class="container">
-    <label for="remember">
+      <label for="remember">
         記住帳號？<input type="checkbox" checked="checked" name="remember"> 
       </label>
-      <span class="extra"><a href=#>沒有帳號？</a>或是 <a href="#">忘記密碼？</a></span>
+      <span class="extra">
+        <a href=# onclick="document.getElementById('id02').style.display='block';
+        document.getElementById('id01').style.display='none'">沒有帳號？</a>
+        或是
+        <a href="#">忘記密碼？</a>
+      </span>
     </div>
   </form>
-    </div>
-    <div id="id02" class="form">
-    <form class="modal-content" action="#">
+</div>
+<!-- 註冊modal -->
+<div id="id02" class="form">
+  <form class="modal-content" action="#">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
-      <img src="logo5.png" class="avatar">
+      <img src="icon/logo5.png" class="avatar">
     </div>
-
     <div class="container">
-<!--      <label for="uname"><b>帳號/電子信箱</b></label>-->
-        <input type="text" placeholder="名稱" name="uname" autocomplete="off" required>
+      <input type="text" placeholder="名稱" name="uname" autocomplete="off" required>
       <input type="email" placeholder="電子信箱" name="email" autocomplete="off" required>
-<!--      <label for="psw"><b>密碼</b></label>-->
       <input type="password" placeholder="密碼" name="psw" required>
-        <input type="password" placeholder="再次確認密碼" name="psw" required>
+      <input type="password" placeholder="再次確認密碼" name="psw" required>
       <button type="submit">註冊</button><br>
     </div>
-
     <div class="container">
-    <span>
+      <span>
         <input type="checkbox">我同意遵守 ToReview 使用協議
       </span>
     </div>
   </form>
-    </div>
-        <div id=main>
-<div class=articleauthor><a href=#><div class=userlittle><i class="fa fa-user"></i></div></a><div class=authorarea><a href=#>Lisa</a><p><i>這裡沒有事，所以沒有人。</i></p><button>追蹤</button></div></div>
-<div class=row2>
-<div class=article1>
-<article>
-<h6>血觀音——觀後感</h6>    
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<br><br>
-觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
-<p>——<b>9/30</b></p>
-            </article>
-<div class=likearea><h2>喜歡這篇文章？</h2><a href=#><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div>
-<div class=comment><h2>發表留言：</h2>
-    <textarea placeholder="想說些什麼？"></textarea>
-    <button type="submit">送出</button>
-    </div>
-    </div>
-<div class=recommand>
-    <h2>你可能會想看：</h2>
-    <ul>
-    <li><a class=recarticle href="right.html" ><header><i class="fa fa-user"></i>&nbsp;<label>Austin</label></header><p>置頂:發文/回文規範</p>
-    </a></li>
-    <li><a class=recarticle href="right.html" ><header><i class="fa fa-user"></i>&nbsp;<label>Austin</label></header><p>置頂:發文/回文規範</p>
-    </a></li>
-    <li><a class=recarticle href="right.html" ><header><i class="fa fa-user"></i>&nbsp;<label>Austin</label></header><p>置頂:發文/回文規範</p>
-    </a></li>
-    </ul></div>
 </div>
+        
+<div id=main>
+  <div class=articleauthor>
+    <a href=#><div class=userlittle><i class="fa fa-user"></i></div></a>
+    <div class=authorarea>
+      <a href=#>Lisa</a>
+      <p><i>這裡沒有事，所以沒有人。</i></p>
+      <button>追蹤</button>
+    </div>
+  </div>
+  <div class=row2>
+    <div class=article1>
+      <article>
+        <h6>血觀音——觀後感</h6>    
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <br><br>
+        觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感觀後感
+        <p>——<b>9/30</b></p>
+      </article>
+      <div class=likearea>
+        <h2>喜歡這篇文章？</h2>
+        <a href=#><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+      </div>
+      <div class=comment>
+        <h2>發表留言：</h2>
+        <textarea placeholder="想說些什麼？"></textarea>
+        <button type="submit">送出</button>
+      </div>
+    </div>
+    <div class=recommand>
+      <h2>你可能會想看：</h2>
+      <ul>
+        <li>
+          <a class=recarticle href="right.html" >
+            <header><i class="fa fa-user"></i>&nbsp;<label>Austin</label></header>
+            <p>置頂:發文/回文規範</p>
+          </a>
+        </li>
+        <li>
+          <a class=recarticle href="right.html" >
+            <header><i class="fa fa-user"></i>&nbsp;<label>Austin</label></header>
+            <p>置頂:發文/回文規範</p>
+          </a>
+        </li>
+        <li>
+          <a class=recarticle href="right.html" >
+            <header><i class="fa fa-user"></i>&nbsp;<label>Austin</label></header>
+            <p>置頂:發文/回文規範</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 <footer>
-Copyright © 2019 ToReview    
+Copyright © 2021 ToReview    
 </footer>
 <script type="text/javascript" src="js/myjquery.js"></script>
-    </body>
-    
+</body>
 </html>

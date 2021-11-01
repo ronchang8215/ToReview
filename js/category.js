@@ -9,7 +9,7 @@ document.getElementById("main").style.marginRight="0px";
 }
       
 function appear(movieName) {
-    var i, movietitle, slideimg;
+    var i, movietitle;
     movietitle = document.getElementsByClassName("movietitle");
     for (i = 0; i < movietitle.length; i++) {
         movietitle[i].style.display = "none";

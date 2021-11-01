@@ -1,180 +1,288 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <title>ToReview</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1", minimum-scale=0.8, maximum-scale=1.2,user-scalable=yes;>
-    <meta charset="UTF-8"/>
-    <meta name="author" content="ninetydegrees8">
-    <meta name="keywords" content="toreview,TOREVIEW,ToReview" />
-    <meta name="robots" content="noindex,nofollow" />
-    <link rel="Shortcut Icon" type="image/x-icon" href="icon/logo/littleicon.ico">
+  <title>ToReview</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1", minimum-scale=0.8, maximum-scale=1.2,user-scalable=yes;> -->
+  <meta charset="UTF-8"/>
+  <!-- <meta name="author" content="ninetydegrees8"> -->
+  <meta name="keywords" content="toreview,TOREVIEW,ToReview" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="icon/logo/littleicon.ico">
   <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="plugin/jquery.mCustomScrollbar.css">
-    <script src="plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <link href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="plugin/jquery.mCustomScrollbar.css"> -->
+  <!-- <script src="plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> -->
 <!--自己的css-->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<input class=allsearch type="text" placeholder="搜尋" >
-<button class=sidesearchicon type="submit"><i class="fa fa-search"></i></button><br><br><br>
-<div class=userphoto><div class=user><i class="fa fa-user"></i></div></div>
-    <div class=userid><a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a><a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a></div><br>
-<a class=sidenava href="about.html"><font>關於ToReview</font></a>
-<a class=sidenava href="member.html"><font>會員專區</font></a>
-<a class=sidenava href="mailto:toreview@gmail.com"><font>聯絡我們</font></a><br><br>
-<div class=logos>
-<a class=logoicon href="#"><img src="icon/facebook-logo.png" width="20px"></a>
-<a class=logoicon href="#"><img src="icon/instagram-logo.png" width="20px"></a>
-<a class=logoicon href="#"><img src="icon/twitter.png" width="20px"></a></div>
+  <input class=allsearch type="text" placeholder="搜尋" >
+  <button class=sidesearchicon type="submit">
+    <i class="fa fa-search"></i>
+  </button>
+  <br><br><br>
+  <div class=userphoto>
+    <div class=user>
+      <i class="fa fa-user"></i>
+    </div>
+  </div>
+  <div class=userid>
+    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+    <a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+  </div>
+  <br>
+  <a class=sidenava href="about.html"><span>關於ToReview</span></a>
+  <a class=sidenava href="member.html"><span>會員專區</span></a>
+  <a class=sidenava href="mailto:toreview@gmail.com"><span>聯絡我們</span></a><br><br>
+  <div class=logos>
+    <a class=logoicon href="#"><img src="icon/facebook-logo.png" width="20px"></a>
+    <a class=logoicon href="#"><img src="icon/instagram-logo.png" width="20px"></a>
+    <a class=logoicon href="#"><img src="icon/twitter.png" width="20px"></a>
+  </div>
 </div>    
 
-<!-- Use any element to open the sidenav -->
-  <nav class="title" >
-      <span><a id=open href="javascript:void(0);">&#9776;</a></span>
-      <div style="padding-top:3px;margin-left:1%;margin-right:1%; float:left;width:10%;min-width:100px;height:36px;">
-      <a href="index.html">
-      <img class=clearfix src="logo4.png" width=100px; height=36px; >
-      </a></div>
-<!--      main nav-->
-      <div class="col-sp" style="float: left;" onclick="opencontent('mobile')">&#8227;</div>
-      <div class="col-x" style="float: left;"><a class=category href="movie.html">電影 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
-      <div class=dropdown-content>
-          <a href="#">亞洲電影</a>
-          <a href="#">西洋電影</a>
-          <a href="#">其他電影</a></div></div>
-      <div class="col-x" style="float: left;"><a class=category href="drama.html">戲劇 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
-          <div class=dropdown-content>
-          <a href="#">亞洲戲劇</a>
-          <a href="#">西洋戲劇</a>
-          <a href="#">其他戲劇</a></div></div>
-      <div class="col-x" style="float: left;"><a class=category href="anime.html">動漫 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
-          <div class=dropdown-content>
-          <a href="#">日本動漫</a>
-          <a href="#">美式動漫</a>
-          <a href="#">其他動漫</a></div></div>
-      <div class="col-y" style="float:right;"><a class=category href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a><a class=category href="#" onclick="document.getElementById('id01').style.display='block'">登入</a></div>
+<nav class="title" >
+  <!-- element to open the sidenav -->
+  <span><a id=open href="javascript:void(0);">&#9776;</a></span>
+  <div style="padding-top:3px;margin-left:1%;margin-right:1%; float:left;width:10%;min-width:100px;height:36px;">
+    <a href="index.html">
+      <img class=clearfix src="icon/logo4.png" width="100px" height="36px" >
+    </a>
+  </div>
+<!-- main nav-->
+  <div class="col-sp" style="float: left;" onclick="opencontent('mobile')">&#8227;</div>
+  <div class="col-x" style="float: left;">
+    <a class=category href="movie.html">電影 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
+    <div class=dropdown-content>
+      <a href="#">亞洲電影</a>
+      <a href="#">西洋電影</a>
+      <a href="#">其他電影</a>
+    </div>
+  </div>
+  <div class="col-x" style="float: left;">
+    <a class=category href="drama.html">戲劇 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
+    <div class=dropdown-content>
+      <a href="#">亞洲戲劇</a>
+      <a href="#">西洋戲劇</a>
+      <a href="#">其他戲劇</a>
+    </div>
+  </div>
+  <div class="col-x" style="float: left;">
+    <a class=category href="anime.html">動漫 <img class=feather src="icon/pen-feather-black-diagonal-shape-of-a-bird-wing.png"></a>
+    <div class=dropdown-content>
+      <a href="#">日本動漫</a>
+      <a href="#">美式動漫</a>
+      <a href="#">其他動漫</a>
+    </div>
+  </div>
+  <div class="col-y" style="float:right;">
+    <a class=category href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+    <a class=category href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+  </div>
 <!--    mobile nav-->
-      <div id=mobile class=mobilenav style="left:-100%">
-      <div class="responsive movie"><a class=category href="movie.html">電影</a><span id=click1><a class=plus><a class=minus></a></a></span>
+  <div id="mobile" class="mobilenav" style="left:-100%">
+    <div class="responsive movie">
+      <a class=category href="movie.html">電影</a>
+      <span id=click1>
+        <a class=plus><a class=minus></a></a>
+      </span>
+    </div>
+    <div id="moviec">
+      <div class="dropdown-content1" >
+        <a href="#">亞洲電影</a>
+        <a href="#">西洋電影</a>
+        <a href="#">其他電影</a>
       </div>
-      <div id="moviec"><div class="dropdown-content1" >
-          <a href="#">亞洲電影</a>
-          <a href="#">西洋電影</a>
-          <a href="#">其他電影</a></div></div>
-      <div class="responsive drama"><a class=category href="drama.html">戲劇</a><span id="click2"><a class=plus></a><a class=minus></a></span>
-          </div>
-      <div id="dramac"><div class=dropdown-content1>
-          <a href="#">亞洲戲劇</a>
-          <a href="#">西洋戲劇</a>
-          <a href="#">其他戲劇</a></div></div>
-      <div class="responsive anime"><a class=category href="anime.html">動漫</a><span id="click3"><a class=plus></a><a class=minus></a></span>
-          </div>
-      <div id="animec"><div class=dropdown-content1>
-          <a href="#">日本動漫</a>
-          <a href="#">美式動漫</a>
-          <a href="#">其他動漫</a></div></div>
-        </div>
-    </nav>
-    <div id="id01" class="form">
-    <form class="modal-content" action="/action_page.php">
+    </div>
+    <div class="responsive drama">
+      <a class=category href="drama.html">戲劇</a>
+      <span id="click2">
+        <a class=plus></a><a class=minus></a>
+      </span>
+    </div>
+    <div id="dramac">
+      <div class=dropdown-content1>
+        <a href="#">亞洲戲劇</a>
+        <a href="#">西洋戲劇</a>
+        <a href="#">其他戲劇</a>
+      </div>
+    </div>
+    <div class="responsive anime">
+      <a class=category href="anime.html">動漫</a>
+      <span id="click3">
+        <a class=plus></a><a class=minus></a>
+      </span>
+    </div>
+    <div id="animec">
+      <div class=dropdown-content1>
+        <a href="#">日本動漫</a>
+        <a href="#">美式動漫</a>
+        <a href="#">其他動漫</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- 登入modal -->
+<div id="id01" class="form">
+  <form class="modal-content" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
-      <img src="logo5.png" class="avatar">
+      <img src="icon/logo5.png" class="avatar">
     </div>
-
     <div class="container">
-<!--      <label for="uname"><b>帳號/電子信箱</b></label>-->
       <input type="email" placeholder="電子信箱" name="email" required>
-<!--      <label for="psw"><b>密碼</b></label>-->
       <input type="password" placeholder="密碼" name="psw" required>
       <button type="submit">登入</button><br>
     </div>
-
     <div class="container">
-    <label for="remember">
+      <label for="remember">
         記住帳號？<input type="checkbox" checked="checked" name="remember"> 
       </label>
-      <span class="extra"><a href=#>沒有帳號？</a>或是 <a href="#">忘記密碼？</a></span>
+      <span class="extra">
+        <a href=# onclick="document.getElementById('id02').style.display='block';
+        document.getElementById('id01').style.display='none'">沒有帳號？</a>
+        或是
+        <a href="#">忘記密碼？</a>
+      </span>
     </div>
   </form>
-    </div>
-    <div id="id02" class="form">
-    <form class="modal-content" action="#">
+</div>
+<!-- 註冊modal -->
+<div id="id02" class="form">
+  <form class="modal-content" action="#">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
-      <img src="logo5.png" class="avatar">
+      <img src="icon/logo5.png" class="avatar">
     </div>
-
     <div class="container">
-<!--      <label for="uname"><b>帳號/電子信箱</b></label>-->
-        <input type="text" placeholder="名稱" name="uname" autocomplete="off" required>
+      <input type="text" placeholder="名稱" name="uname" autocomplete="off" required>
       <input type="email" placeholder="電子信箱" name="email" autocomplete="off" required>
-<!--      <label for="psw"><b>密碼</b></label>-->
       <input type="password" placeholder="密碼" name="psw" required>
-        <input type="password" placeholder="再次確認密碼" name="psw" required>
+      <input type="password" placeholder="再次確認密碼" name="psw" required>
       <button type="submit">註冊</button><br>
     </div>
-
     <div class="container">
-    <span>
+      <span>
         <input type="checkbox">我同意遵守 ToReview 使用協議
       </span>
     </div>
   </form>
-    </div>
+</div>
 
 <div id="main" style="position:relative;">
-<div class="row2 about">
-<div class="t">T</div>
-<div class="o">o</div>
-<div class="blank"></div>
-<div class="r">R</div>
-<div class="e">e</div>
-<div class="v">v</div>
-<div class="i">i</div>
-<div class="e2">e</div>
-<div class="w">w</div></div>
-<div class=toreview><p>ToReview，在這裡我們可以一起討論，評價作品，讓我們開始review together</p></div>
-<!--    <div class=square></div><br>-->
-    <h1 class=h1one>最近的話題作品</h1>
-    <div class=slideshow-container>
-        <div class="mySlides">
-    <div class="slide"><a href=#><img class="slideimg" src="picture/TheBoldtheCorruptandtheBeautiful.jpg"><div class="content">血觀音</div></a></div>
-    <div class="slide" style="animation-delay: 0.05s;"><a href=#><img class="slideimg" src="picture/palyone.jpg"><div class="content">一級玩家</div></a></div>
-    <div class="slide" style="animation-delay: 0.1s;"><a href=#><img class="slideimg" src="picture/pacificrim2.jpg"><div class="content">環太平洋2</div></a></div>
-    <div class="slide" style="animation-delay: 0.15s;"><a href=#><img class="slideimg" src="picture/lalaland.jpg"><div class="content">樂來越愛你</div></a></div>
-    <div class="slide" style="animation-delay: 0.2s;"><a href=#><img class="slideimg" src="picture/TheGreatBuddha.jpg"><div class="content">大佛普拉斯</div></a></div>
+  <div class="row2 about">
+    <div class="t">T</div>
+    <div class="o">o</div>
+    <div class="blank"></div>
+    <div class="r">R</div>
+    <div class="e">e</div>
+    <div class="v">v</div>
+    <div class="i">i</div>
+    <div class="e2">e</div>
+    <div class="w">w</div>
   </div>
-
-  <div class="mySlides">
-    <div class="slide"><a href=#><img class="slideimg" src="picture/TheBoldtheCorruptandtheBeautiful.jpg"><div class="content">血觀音</div></a></div>
-    <div class="slide" style="animation-delay: 0.05s;"><a href=#><img class="slideimg" src="picture/palyone.jpg"><div class="content">一級玩家</div></a></div>
-    <div class="slide" style="animation-delay: 0.1s;"><a href=#><img class="slideimg" src="picture/lalaland.jpg"><div class="content">環太平洋2</div></a></div>
-    <div class="slide" style="animation-delay: 0.15s;"><a href=#><img class="slideimg" src="picture/lalaland.jpg"><div class="content">樂來越愛你</div></a></div>
-    <div class="slide" style="animation-delay: 0.2s;"><a href=#><img class="slideimg" src="picture/TheGreatBuddha.jpg"><div class="content">大佛普拉斯</div></a></div>
+  <div class=toreview>
+    <p>ToReview，在這裡我們可以一起討論，評價作品，讓我們開始review together</p>
   </div>
-
-  <div class="mySlides">
-    <div class="slide"><a href=#><img class="slideimg" src="picture/TheBoldtheCorruptandtheBeautiful.jpg"><div class="content">血觀音</div></a></div>
-    <div class="slide" style="animation-delay: 0.05s;"><a href=#><img class="slideimg" src="picture/palyone.jpg"><div class="content">一級玩家</div></a></div>
-    <div class="slide" style="animation-delay: 0.1s;"><a href=#><img class="slideimg" src="picture/pacificrim2.jpg"><div class="content">環太平洋2</div></a></div>
-    <div class="slide" style="animation-delay: 0.15s;"><a href=#><img class="slideimg" src="picture/pacificrim2.jpg"><div class="content">樂來越愛你</div></a></div>
-    <div class="slide" style="animation-delay: 0.2s;"><a href=#><img class="slideimg" src="picture/TheGreatBuddha.jpg"><div class="content">大佛普拉斯</div></a></div>
-  </div>
-
+  <h1 class=h1one>最近的話題作品</h1>
+  <div class=slideshow-container>
+    <div class="mySlides">
+      <div class="slide">
+        <a href=#>
+          <img class="slideimg" src="picture/TheBoldtheCorruptandtheBeautiful.jpg">
+          <div class="content">血觀音</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.05s;">
+        <a href=#>
+          <img class="slideimg" src="picture/palyone.jpg">
+          <div class="content">一級玩家</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.1s;">
+        <a href=#>
+          <img class="slideimg" src="picture/pacificrim2.jpg">
+          <div class="content">環太平洋2</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.15s;">
+        <a href=#>
+          <img class="slideimg" src="picture/lalaland.jpg">
+          <div class="content">樂來越愛你</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.2s;">
+        <a href=#>
+          <img class="slideimg" src="picture/TheGreatBuddha.jpg">
+          <div class="content">大佛普拉斯</div>
+        </a>
+      </div>
+    </div>
+    <div class="mySlides">
+      <div class="slide">
+        <a href=#>
+          <img class="slideimg" src="picture/TheBoldtheCorruptandtheBeautiful.jpg">
+          <div class="content">血觀音</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.05s;">
+        <a href=#>
+          <img class="slideimg" src="picture/palyone.jpg">
+          <div class="content">一級玩家</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.1s;">
+        <a href=#>
+          <img class="slideimg" src="picture/lalaland.jpg">
+          <div class="content">環太平洋2</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.15s;"><a href=#><img class="slideimg" src="picture/lalaland.jpg"><div class="content">樂來越愛你</div></a></div>
+      <div class="slide" style="animation-delay: 0.2s;"><a href=#><img class="slideimg" src="picture/TheGreatBuddha.jpg"><div class="content">大佛普拉斯</div></a></div>
+    </div>
+    <div class="mySlides">
+      <div class="slide">
+        <a href=#>
+          <img class="slideimg" src="picture/TheBoldtheCorruptandtheBeautiful.jpg">
+          <div class="content">血觀音</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.05s;">
+        <a href=#>
+          <img class="slideimg" src="picture/palyone.jpg">
+          <div class="content">一級玩家</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.1s;">
+        <a href=#><img class="slideimg" src="picture/pacificrim2.jpg">
+          <div class="content">環太平洋2</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.15s;">
+        <a href=#>
+          <img class="slideimg" src="picture/pacificrim2.jpg">
+          <div class="content">樂來越愛你</div>
+        </a>
+      </div>
+      <div class="slide" style="animation-delay: 0.2s;">
+        <a href=#><img class="slideimg" src="picture/TheGreatBuddha.jpg">
+          <div class="content">大佛普拉斯</div>
+        </a>
+      </div>
+    </div>
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -182,70 +290,207 @@
 
 <!--mobilehotwork-->
 <div class=mobilehot>
-<div class="row2 indexwork">
-<a class=hotwork href=#><img  src="picture/TheBoldtheCorruptandtheBeautiful.jpg"><div class="content2">血觀音</div></a>
-<div class=hotworks>
-<a href=#><img src="picture/TheGreatBuddha.jpg" width=100%><div class="content3">血觀音</div></a>
-<a href=#><img src="picture/palyone.jpg"  width=100%><div class="content3">血觀音</div></a>
-<a href=#><img src="picture/pacificrim2.jpg"  width=100%><div class="content3">血觀音</div></a></div>
-<a class=hotwork href=#><img src="picture/lalaland.jpg"><div class="content2">血觀音</div></a>
-</div>
-<div class="row2 indexwork">
-<div class=hotworks>
-<a href=#><img src="picture/TheBoldtheCorruptandtheBeautiful.jpg" width=100%><div class="content3">血觀音</div></a>
-<a href=#><img src="picture/pacificrim2.jpg"  width=100%><div class="content3">血觀音</div></a>
-<a href=#><img src="picture/lalaland.jpg"  width=100%><div class="content3">血觀音</div></a></div>
-<a class=hotwork href=#><img  src="picture/TheGreatBuddha.jpg"><div class="content2">血觀音</div></a>
-<a class=hotwork href=#><img src="picture/palyone.jpg"><div class="content2">血觀音</div></a>
-</div>
-<!--
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
--->
+  <div class="row2 indexwork">
+    <a class=hotwork href=#>
+      <img  src="picture/TheBoldtheCorruptandtheBeautiful.jpg">
+      <div class="content2">血觀音</div>
+    </a>
+    <div class=hotworks>
+      <a href=#><img src="picture/TheGreatBuddha.jpg" width=100%><div class="content3">大佛普拉斯</div></a>
+      <a href=#><img src="picture/palyone.jpg"  width=100%><div class="content3">一級玩家</div></a>
+      <a href=#><img src="picture/pacificrim2.jpg"  width=100%><div class="content3">環太平洋2</div></a>
     </div>
-    
-    
-    <h1 class=h1two>看看大家寫了什麼</h1>
-    <div class=row3 style="position:relative">
+    <a class=hotwork href=#>
+      <img src="picture/lalaland.jpg">
+      <div class="content2">樂來越愛你</div>
+    </a>
+  </div>
+  <div class="row2 indexwork">
+    <div class=hotworks>
+      <a href=#><img src="picture/TheBoldtheCorruptandtheBeautiful.jpg" width=100%><div class="content3">血觀音</div></a>
+      <a href=#><img src="picture/pacificrim2.jpg"  width=100%><div class="content3">環太平洋2</div></a>
+      <a href=#><img src="picture/lalaland.jpg"  width=100%><div class="content3">樂來越愛你</div></a>
+    </div>
+    <a class=hotwork href=#><img  src="picture/TheGreatBuddha.jpg"><div class="content2">大佛普拉斯</div></a>
+    <a class=hotwork href=#><img src="picture/palyone.jpg"><div class="content2">一級玩家</div></a>
+  </div>
+</div>
+<h1 class=h1two>看看大家寫了什麼</h1>
+  <div class=row3 style="position:relative">
     <div class=col-8>
-<!--    <h1 class=h1two>最新發表</h1>-->
-    <ul>
-<li>
-    <article class=indexarticlelist><header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header><a href="right.html"><h2>有雷，慎入</h2><p>本片的演員各個戲精沒話說，但導演在討論會中分享關於自己如何導戲與安撫片中眾多女人。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，的確，導演也說往往一、兩個take就沒問題的文淇，這場戲拍了八、九次才放行。導演更搞笑表示，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>         
-<li><article class=indexarticlelist><header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header><a href="right.html"><h2>有雷，慎入</h2><p>本片的演員各個戲精沒話說，但導演在討論會中分享關於自己如何導戲與安撫片中眾多女人。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，的確，導演也說往往一、兩個take就沒問題的文淇，這場戲拍了八、九次才放行。導演更搞笑表示，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>    
-<li><article class=indexarticlelist><header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header><a href="right.html"><h2>有雷，慎入</h2><p>本片的演員各個戲精沒話說，但導演在討論會中分享關於自己如何導戲與安撫片中眾多女人。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，的確，導演也說往往一、兩個take就沒問題的文淇，這場戲拍了八、九次才放行。導演更搞笑表示，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>   
-<li><article class=indexarticlelist><header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header><a href="right.html"><h2>有雷，慎入</h2><p>本片的演員各個戲精沒話說，但導演在討論會中分享關於自己如何導戲與安撫片中眾多女人。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，的確，導演也說往往一、兩個take就沒問題的文淇，這場戲拍了八、九次才放行。導演更搞笑表示，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li> 
-<li><article class=indexarticlelist><header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header><a href="right.html"><h2>有雷，慎入</h2><p>本片的演員各個戲精沒話說，但導演在討論會中分享關於自己如何導戲與安撫片中眾多女人。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，的確，導演也說往往一、兩個take就沒問題的文淇，這場戲拍了八、九次才放行。導演更搞笑表示，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>
-<li><article class=indexarticlelist><header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header><a href="right.html"><h2>有雷，慎入</h2><p>本片的演員各個戲精沒話說，但導演在討論會中分享關於自己如何導戲與安撫片中眾多女人。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，的確，導演也說往往一、兩個take就沒問題的文淇，這場戲拍了八、九次才放行。導演更搞笑表示，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>   
-        </ul>
+      <ul>
+        <li>
+          <article class=indexarticlelist>
+            <header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html">
+              <h2>有雷，慎入</h2>
+              <p>本片的演員各個演技沒話說。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p>
+            </a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=indexarticlelist>
+            <header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html">
+              <h2>有雷，慎入</h2>
+              <p>本片的演員各個演技沒話說。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p>
+            </a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=indexarticlelist>
+            <header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html">
+              <h2>有雷，慎入</h2>
+              <p>本片的演員各個演技沒話說。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p>
+            </a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=indexarticlelist>
+            <header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html">
+              <h2>有雷，慎入</h2>
+              <p>本片的演員各個演技沒話說。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p>
+            </a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=indexarticlelist>
+            <header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html">
+              <h2>有雷，慎入</h2>
+              <p>本片的演員各個演技沒話說。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p>
+            </a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=indexarticlelist>
+            <header>6/1&nbsp;&nbsp;<a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html">
+              <h2>有雷，慎入</h2>
+              <p>本片的演員各個演技沒話說。許多人認為文淇光是看著翩翩見死不救那場戲的表情與情緒就足以得金馬獎，因為這場是他所認定真真最重要的戲，所以他請文淇想像小狗被車撞，想救又無能為力，原本文淇還無法想像，導演威脅要找youtube狗狗掙扎痛苦的影片，才成功努力想像了這段戲。而如何掌握眾多女演員，導演說其實簡單，「擒賊先擒王」，陳莎莉在，他只導她的戲，若她不在，那就是惠英紅。調整到導演想要的感覺之後，其他的演員便會跟隨他們的演法。 </p>
+            </a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+      </ul>
     </div>
-    
     <div class="col-4 rightarea">
-    <h1 class=h1three>本週熱門文章</h1>
-<ul class=rightside>
-<li><article class=hotarticlelist>
-    <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
-    <a href="right.html"><h3>有雷，慎入</h3></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>  
-<li><article class=hotarticlelist>
-    <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
-    <a href="right.html"><h3>有雷，慎入</h3></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>
-<li><article class=hotarticlelist>
-    <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
-    <a href="right.html"><h3>有雷，慎入</h3></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>
-<li><article class=hotarticlelist>
-    <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
-    <a href="right.html"><h3>有雷，慎入</h3></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>
-<li><article class=hotarticlelist>
-    <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
-    <a href="right.html"><h3>有雷，慎入</h3></a><div><a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a><a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a></div></article></li>
-        </ul>
-        </div>
-</div></div>
-    
+      <h1 class=h1three>本週熱門文章</h1>
+      <ul class=rightside>
+        <li>
+          <article class=hotarticlelist>
+            <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html"><h3>有雷，慎入</h3></a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=hotarticlelist>
+            <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html"><h3>有雷，慎入</h3></a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=hotarticlelist>
+            <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html"><h3>有雷，慎入</h3></a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=hotarticlelist>
+            <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html"><h3>有雷，慎入</h3></a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class=hotarticlelist>
+            <header><a href="#"><i class="fa fa-user"></i>&nbsp;Austin</a></header>
+            <a href="right.html"><h3>有雷，慎入</h3></a>
+            <div>
+              <a href="#"><i class="fa fa-comment-o"></i>&nbsp;<label>0</label></a>
+              <a href="#"><i class="fa fa-thumbs-up"></i>&nbsp;<label>0</label></a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>  
 <footer>
-Copyright © 2019 ToReview    
+Copyright © 2021 ToReview  
 </footer>
 <script type="text/javascript" src="js/myjquery.js"></script>
-</body>
+<script type="text/javascript">
+var slideIndex = 0;
 
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}   slides[slideIndex-1].style.display = "flex";
+    setTimeout(showSlides, 5000);
+}
+      
+showSlides();
+    
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }  
+  slides[slideIndex-1].style.display = "flex";
+}
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides1(slideIndex += n);
+}
+</script>
+</body>
 </html>

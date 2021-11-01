@@ -1,6 +1,6 @@
 function tab(evt,number) {
     
-    var i, tabcontent, tablinks, tabpage;
+    var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("discusspage");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -13,5 +13,4 @@ function tab(evt,number) {
     evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
