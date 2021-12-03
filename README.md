@@ -38,7 +38,7 @@ demo網址：[ToReview](https://ronchang8215.github.io/ToReview/)
 
 ![作品類別頁](https://i.imgur.com/GFenBAT.png)
 ### 作品討論區
-簡易頁碼功能
+簡易分頁功能
 
 ![作品討論區](https://i.imgur.com/IRNBPai.png)
 ### 登入/註冊頁
