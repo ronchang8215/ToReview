@@ -11,7 +11,7 @@ demo網址：[ToReview](https://ronchang8215.github.io/ToReview/)
 * 關於ToReview
 * 會員頁面
 * 作品類別頁
-   >+ 簡易搜尋&排序
+  >+ 簡易搜尋、排序、語言分類
 * 作品討論區
 * 登入/註冊頁(無後台及後端)
 
@@ -34,7 +34,7 @@ demo網址：[ToReview](https://ronchang8215.github.io/ToReview/)
 ### 會員專區
 ![會員專區](https://i.imgur.com/bc8SC7v.png)
 ### 作品類別頁
-有排序&簡易搜尋功能，右邊黑格可呈現滑鼠移到的作品資訊
+有排序、簡易搜尋、語言分類功能，右邊黑格可呈現滑鼠移到的作品資訊
 
 ![作品類別頁](https://i.imgur.com/GFenBAT.png)
 ### 作品討論區

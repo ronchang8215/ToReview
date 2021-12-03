@@ -6,10 +6,15 @@ footer {
   display: block;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-    line-height: 1;
-    margin: 0;
-    font-family: 'Open Sans Condensed','Microsoft JhengHei',sans-serif ;
+  line-height: 1;
+  margin: 0;
+  font-family: 'Open Sans Condensed','Microsoft JhengHei',sans-serif ;
+  height: 100%;
 }
 
 .clearfix {
@@ -917,6 +922,7 @@ span.extra {
   font-size:15px;
   margin: 0;
   padding:0px 20px;
+  min-height: calc(100% - 30px);
 }
 
 /*######### Mobile ###########*/
