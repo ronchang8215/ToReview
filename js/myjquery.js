@@ -17,50 +17,49 @@ $(document).ready(function(){
   mediafunction();
 });
 
-// When the user clicks anywhere outside of the modal, close it
+var modal1 = document.getElementById("id01");
+var modal2 = document.getElementById("id02");
 
-function closeform1(event) {
-    if (event.target == modal1) {
-        modal1.style.display = "none";
-    }
+function closeform1(e) {
+  if (e.target === modal1) {
+    modal1.style.display = "none";
+  }
 }
 
-function closeform2(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
+function closeform2(e) {
+  if (e.target === modal2) {
+    modal2.style.display = "none";
+  }
 }
 
-window.onclick=function(){closeform1(event);closeform2(event);}
+window.addEventListener("click",closeform1,false);
+window.addEventListener("click",closeform2,false);
 
 function opencontent(x) {
-    if(document.getElementById(x).style.left === "-100%") {
-      document.getElementById(x).style.left = "0%";
-    }
-    else {
-      document.getElementById(x).style.left = "-100%";
-    }
+  if(document.getElementById(x).style.left === "-100%") {
+    document.getElementById(x).style.left = "0%";
+  }
+  else {
+    document.getElementById(x).style.left = "-100%";
+  }
 }
 
- /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
       
 function openNav() {
-    document.getElementById("mySidenav").style.left = "0px";
-    document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidenav").style.left = "0px";
+  document.getElementById("main").style.marginLeft = "250px";
 }
 
 function openNav1() {
-    document.getElementById("mySidenav").style.left = "0px";
-    document.getElementById("main").style.marginLeft = "0px";
+  document.getElementById("mySidenav").style.left = "0px";
+  document.getElementById("main").style.marginLeft = "0px";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.left = "-250px";
-    document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidenav").style.left = "-250px";
+  document.getElementById("main").style.marginLeft = "0";
 }
-    
-// var x = window.matchMedia("(max-width: 640px)");      
+          
 function mediafunction(){
   var y = document.getElementById("open");
     if ($(window).width() < 640) { // If media query matches
@@ -72,11 +71,6 @@ function mediafunction(){
       document.getElementById("mySidenav").style.opacity = "0.9";
   }
 }
-// mediafunction(x) 
-// Call listener function at run time
+ 
 window.addEventListener("mousemove",mediafunction);
-// Attach listener function on state changes
-      
-var modal1 = document.getElementById("id01");
-var modal2 = document.getElementById("id02");
  

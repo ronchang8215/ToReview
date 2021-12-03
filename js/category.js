@@ -18,14 +18,12 @@ function appear(movieName) {
 }
 
 function myFunction() {
-    // Declare variables
     var input, filter, ul, li, a, i;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
 
-    // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
@@ -39,32 +37,19 @@ function myFunction() {
 var list, i, switching, b, shouldSwitch;
 list = document.getElementById("myUL");
       
-      function sortListtime() {
+function sortListtime() {
 switching = true;
-  /*Make a loop that will continue until
-  no switching has been done:*/
   while (switching) {
-    //start by saying: no switching is done:
     switching = false;
     b = list.getElementsByTagName("LI");
-    //Loop through all list-items:
     for (i = 0; i < (b.length - 1); i++) {
-      //start by saying there should be no switching:
       shouldSwitch = false;
-      /*check if the next item should
-      switch place with the current item:*/
-      
       if (Number(b[i].dataset.date) < Number(b[i + 1].dataset.date)) {
-        /*if next item is numerically
-        lower than current item, mark as a switch
-        and break the loop:*/
         shouldSwitch = true;
         break;
       }
     }
     if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark the switch as done:*/
       b[i].parentNode.insertBefore(b[i + 1], b[i]);
       switching = true;
     }
@@ -78,7 +63,6 @@ switching = true;
   {
     switching = false;
     b = list.getElementsByTagName("LI");
-    //Loop through all list-items:
     for (i = 0; i < (b.length - 1); i++) 
     {
       shouldSwitch = false;
@@ -96,20 +80,19 @@ switching = true;
   }
 }
       
-filterSelection("all") // Execute the function and show all columns
+filterSelection("all") 
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("work");
   if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
   }
 }
 
-// Show filtered elements
-function w3AddClass(element, name) {
+
+function AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -120,8 +103,8 @@ function w3AddClass(element, name) {
   }
 }
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
+
+function RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -133,7 +116,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
+
 var btnContainer1 = document.getElementById("divide");
 var btnContainer2 = document.getElementById("languagedivide");
 var btn1 = btnContainer1.getElementsByTagName("a");
