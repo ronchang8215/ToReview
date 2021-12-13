@@ -66,9 +66,11 @@ function mediafunction(){
       y.onclick = openNav1;
       document.getElementById("mySidenav").style.opacity = "1";
       $(".newarticle").attr("target","_blank");
+      $("#side").hide();
   } else {
       y.onclick= openNav;
       document.getElementById("mySidenav").style.opacity = "0.9";
+      $("#side").show();
   }
 }
  
